@@ -17,4 +17,6 @@ public class Order implements Serializable {
     private String name;
     @ApiModelProperty(value = "订单金额", position = 2)
     private BigDecimal amount;
+    @ApiModelProperty(value = "数量", position = 3)
+    private Integer count;
 }

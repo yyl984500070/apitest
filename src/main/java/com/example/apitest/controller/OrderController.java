@@ -27,6 +27,7 @@ public class OrderController {
         order.setId(id);
         order.setName("订单名称" + id);
         order.setAmount(BigDecimal.valueOf(1));
+        order.setCount(1);
         return Result.success();
     }
 }
