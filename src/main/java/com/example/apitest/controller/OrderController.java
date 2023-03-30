@@ -21,12 +21,12 @@ public class OrderController {
     }
 
     @ApiOperation(value = "根据订单号获取订单")
-    @GetMapping("getCurrentTime/{id}")
-    public Result<Order> getOrderByID(@PathVariable("id") Long id){
+    @GetMapping("getOrderById/{id}")
+    public Result<Order> getOrderById(@PathVariable("id") Long id){
         Order order = new Order();
         order.setId(id);
         order.setName("订单名称" + id);
         order.setAmount(BigDecimal.valueOf(1));
-        return Result.success();
+        return Result.success(order);
     }
 }
