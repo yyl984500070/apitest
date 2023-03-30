@@ -14,16 +14,10 @@
  * limitations under the License.
  */
 
-package com.alibaba.nacos.api.model.v2;
+package com.example.apitest.model;
 
 import java.io.Serializable;
 
-/**
- * Response Result.
- *
- * @author dongyafei
- * @date 2022/7/12
- */
 public class Result<T> implements Serializable {
     
     private static final long serialVersionUID = 6258345442767540526L;

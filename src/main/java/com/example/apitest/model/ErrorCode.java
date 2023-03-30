@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.alibaba.nacos.api.model.v2;
+package com.example.apitest.model;
 
 /**
  * Response Error Code.

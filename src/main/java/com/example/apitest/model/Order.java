@@ -1,7 +1,20 @@
-package com.example.apitest.model;/**
- *@Description TODO
- *@Author hongji
- *@Date 2023/3/30 14:39
- *@Version 1.0
-**/public class Order {
+package com.example.apitest.model;
+
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+@Data
+@ApiModel(value = "订单对象")
+public class Order implements Serializable {
+    private static final long serialVersionUID = 3054557791783176792L;
+    @ApiModelProperty(value = "订单号", position = 0)
+    private Long id;
+    @ApiModelProperty(value = "订单名称", position = 1)
+    private String name;
+    @ApiModelProperty(value = "订单金额", position = 2)
+    private BigDecimal amount;
 }

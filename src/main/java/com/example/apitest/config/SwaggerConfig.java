@@ -1,4 +1,4 @@
-package com.example.apitest.controller.config;
+package com.example.apitest.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -29,7 +29,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo()).enable(true)
                 .select()
                 //apis： 添加swagger接口提取范围
-                .apis(RequestHandlerSelectors.basePackage("com.ccl.eurekaclient.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.apitest.controller"))
                 .paths(PathSelectors.any())
                 .build();
 
@@ -38,8 +38,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("测试")
-                .description("测试测试")
+                .title("测试api管理功能")
+                .description("测试api管理功能")
                 .version("v1.0")
                 .build();
     }
